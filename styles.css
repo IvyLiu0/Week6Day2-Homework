@@ -5,8 +5,11 @@ header {
     padding-top: 3em;
 }
 #home header {
+    width: 100%;
     background:  no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .main-header {
     background-color:rgb(255, 255, 255, 0.8) ;
@@ -74,14 +77,13 @@ section {
     background-color: #4288C3;
 }
 section #partners {  
-    width: 1200px;
     padding: 2em 0 2em 0;
     margin: 0 auto;
     text-align: center;
 }
 section #partners .partner {
     display: inline-block;
-    margin: 0 0.75em;
+    margin: 0.5em;
     padding: 1.3em 1.5em;
     background-color: #fff;
     border-radius: 50%;
@@ -119,7 +121,6 @@ footer #disclaimer p {
 footer #nondisclaimer .social .fa {
     padding: 15px;
     font-size: 15px;
-    width: 15px;
     text-align: center;
     text-decoration: none;
     margin: 0 4px;
