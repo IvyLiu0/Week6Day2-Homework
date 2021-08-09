@@ -27,7 +27,8 @@ header {
 
 /* Navigation */
 .main-menu {
-    margin-left: 227px;
+    padding: 0 !important;
+    padding-left: 3.5rem !important;
     font-weight: 400;
 }
 .main-menu ul li {
@@ -37,13 +38,13 @@ header {
     padding-left: 25px;
     padding-right: 25px;
     border-left: 1px solid rgba(202, 204, 202, 0.6);
-    line-height: 100px;
+    line-height: 80px;
     text-transform: uppercase;
     font-size: 14px;
 }
 .main-menu ul li a {
     text-decoration: none;
-    color: #888;
+    color: #888 !important;
 }
 .main-menu ul li a:hover {
     color: #9ed034;
@@ -53,8 +54,14 @@ header {
     border: none;
 }
 .main-menu ul li.active a {
-    color: #fff;
+    color: #fff !important;
 }
+
+.navbar{
+    height: 100px;
+}
+
+
 
 /* Main */
 main {
@@ -151,21 +158,6 @@ footer #nondisclaimer .social .fa-instagram {
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
 
 /* Media Queries */
-@media (max-width: 768px) {
-    footer #nondisclaimer .copy {
-        padding: 3.5em 0em 3.5em 0em;
-        text-align: center;
-        float: none;
-        font-size: 0.9em;
-      }
-      footer #nondisclaimer .social {
-        padding: 2.5em 0;
-        margin: 0;
-        text-align: center;
-        float: none;
-      }
-}
-
 @media (max-width: 992px) {
     .logo img {
         position: relative;
@@ -175,7 +167,8 @@ footer #nondisclaimer .social .fa-instagram {
         width: 200px;
         background-color:rgb(255, 255, 255);
         position: absolute;
-        right: 1.7em;
+        /* right: 1.7em; */
+        margin-left: 30em;
       }
       .main-menu ul li {
         border-bottom: 1px solid rgba(202, 204, 202, 0.6);
@@ -189,9 +182,44 @@ footer #nondisclaimer .social .fa-instagram {
         min-height: 450px;
         margin-top: 1em;
       }
+      .nav-item{
+        background-color: #fff;
+        height: 65px;
+        text-align: center;
+    }
+    .nav-link{
+        padding:0;
+        height: 20px;
+    }
 }
+
+@media (max-width: 768px) {
+    footer #nondisclaimer .copy {
+        padding: 3.5em 0em 3.5em 0em;
+        text-align: center;
+        float: none;
+        font-size: 0.9em;
+      }
+      footer #nondisclaimer .social {
+        padding: 2.5em 0;
+        margin: 0;
+        text-align: center;
+        float: none;
+      }
+      .main-menu{
+          margin-left: 50vw;
+      }
+}
+
+@media (max-width: 400px){
+    .main-menu{
+        margin-left: 5em;
+    }
+}
+
 
 .navbar-custom {
     background-color: rgb(255, 255, 255, 0.8);
     background-color: transparent;
 }
+
